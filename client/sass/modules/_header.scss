@@ -19,6 +19,9 @@
 		position:relative;
 		z-index:20;
 	}
+	.site-logo{
+		margin-top: -10px;
+	}
 	.logo{
 		position:absolute;
 		display:inline-block;
@@ -170,7 +173,7 @@
 	}
 	&.empty{
 		.search-field{
-			background: white(0.1);
+			background: white;
 			&:focus{
 				background: white;
 			}

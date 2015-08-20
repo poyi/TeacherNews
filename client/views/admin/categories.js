@@ -1,6 +1,6 @@
 Template.categories.helpers({
   categories: function(){
-    return Categories.find({}, {sort: {name: 1}});
+    return Categories.find({});
   }
 });
 

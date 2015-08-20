@@ -5,13 +5,14 @@
 
     <ul class="nav site-nav desktop">
       {{#if canView}}
+      <li class="site-logo"><a href="/"><img src="/img/tn-logo.png"/></a></li>
       <li><a class="top" href="/top">{{i18n "Top"}}</a></li>
       <li><a class="new" href="/new">{{i18n "Newest"}}</a></li>
-      <li><a class="digest" href="/digest">{{i18n "Daily Digest"}}</a></li>
+      <!--<li><a class="digest" href="/digest">{{i18n "Daily Digest"}}</a></li>-->
       {{/if}}
       {{#if hasCategories}}
       <li class="dropdown">
-        <a class="categories" href="/">{{i18n "Categories"}}</a>
+        <a class="categories" href="/">{{i18n "Grade Level"}}</a>
         <div class="dropdown-menu">
           <ul role="menu" aria-labelledby="dLabel">
             {{# each categories}}
@@ -41,19 +42,10 @@
       </li>
     </ul>
 
-    {{#if logo_url}}
-      <h1 class="logo image" style="height:{{logo_height}}px; width:{{logo_width}}px; top:{{logo_top}}px; margin-left:{{logo_offset}}px;">
-        <a href="/">
-          <img src="{{logo_url}}" style="height:{{logo_height}}px;" alt="{{site_title}}"/>
-        </a>
-      </h1>
-    {{else}}
-      <h1 class="logo"><a href="/">{{site_title}}</a></h1>
-    {{/if}}
 
     {{#if canView}}
     <ul class="nav user-nav desktop">
-      <li><a id="submit" class="submit button" href="/submit">{{i18n "Post"}}</a></li>
+      <li><a id="submit" class="submit button" href="/submit">{{i18n "Submit Resource"}}</a></li>
     </ul>
     {{/if}}
 
